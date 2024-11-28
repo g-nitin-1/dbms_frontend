@@ -20,7 +20,7 @@ function PostUpdate() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/a/updates', {
+      const response = await fetch('https://dbms-backend-97ab.onrender.com/a/updates', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

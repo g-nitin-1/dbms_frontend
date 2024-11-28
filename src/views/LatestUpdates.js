@@ -10,7 +10,7 @@ export default function AllJobs() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/s/updates", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/s/updates", {
         method: "GET",
         headers: { 
           "Content-Type": "application/json",

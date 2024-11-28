@@ -42,7 +42,7 @@ function Admin() {
   const is_valid = async () => {
     try {
       console.log("token : ", localStorage.getItem("token"));
-      const response = await fetch("http://localhost:3000/a", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/a", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -86,7 +86,7 @@ function Admin() {
   useEffect(() => {
     const is_valid = async () => {
       try {
-        const response = await fetch("http://localhost:3000/a", {
+        const response = await fetch("https://dbms-backend-97ab.onrender.com/a", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

@@ -28,7 +28,7 @@ export default function CompanyHome() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/c/jobs", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/c/jobs", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

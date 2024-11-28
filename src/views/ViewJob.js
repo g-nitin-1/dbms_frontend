@@ -27,7 +27,7 @@ const handleSubmit = async (e) =>{
     e.preventDefault();
     try {
       //console.log("data sending jid is: ",data1.JID)
-        const response = await fetch("http://localhost:3000/c/studentslist", {
+        const response = await fetch("https://dbms-backend-97ab.onrender.com/c/studentslist", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -54,7 +54,7 @@ const handleSubmit = async (e) =>{
 const handleSubmit1 = async (e) =>{
     e.preventDefault();
     try {
-        const response = await fetch("http://localhost:3000/c/interviewlist", {
+        const response = await fetch("https://dbms-backend-97ab.onrender.com/c/interviewlist", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -82,7 +82,7 @@ const handleSubmit2 = async (e) =>{
     e.preventDefault();
     // console.log(data1);
     try {
-        const response = await fetch("http://localhost:3000/c/offerlist", {
+        const response = await fetch("https://dbms-backend-97ab.onrender.com/c/offerlist", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -110,7 +110,7 @@ const handleSubmit2 = async (e) =>{
   const fetchData = async () => {
     
     try {
-      const response = await fetch("http://localhost:3000/c/interviewdetails", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/c/interviewdetails", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -160,7 +160,7 @@ const handleSubmit2 = async (e) =>{
     event.preventDefault();
     try {
       console.log("data is sending1: " ,formData)
-      const response = await fetch("http://localhost:3000/c/updateinterviewdetails", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/c/updateinterviewdetails", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -27,7 +27,7 @@ function StudentProfile() {
   // Function to fetch data from the API
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/s/user", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/s/user", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -80,7 +80,7 @@ function StudentProfile() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/s/updateProfile", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/s/updateProfile", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

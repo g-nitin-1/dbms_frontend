@@ -24,7 +24,7 @@ function StudentsList() {
       const appId = formData.get("user_id");
 
       try {
-        const response = await fetch("http://localhost:3000/s/offeraccepted", {
+        const response = await fetch("https://dbms-backend-97ab.onrender.com/s/offeraccepted", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -53,7 +53,7 @@ function StudentsList() {
   
       try {
         console.log("false");
-        const response = await fetch("http://localhost:3000/s/offerrejected", {
+        const response = await fetch("https://dbms-backend-97ab.onrender.com/s/offerrejected", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -77,7 +77,7 @@ function StudentsList() {
   
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/s/offers", {
+        const response = await fetch("https://dbms-backend-97ab.onrender.com/s/offers", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

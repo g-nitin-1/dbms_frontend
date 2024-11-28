@@ -7,7 +7,7 @@ function AddUser() {
 
     const handleClick = async () => {
         try {
-            const response = await fetch('http://localhost:3000/adduser', {
+            const response = await fetch('https://dbms-backend-97ab.onrender.com/adduser', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

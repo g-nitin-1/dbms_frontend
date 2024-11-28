@@ -24,7 +24,7 @@ function InterviewList() {
     const formData = new FormData(event.target);
     const userId = formData.get("user_id");
     try {
-      const response = await fetch("http://localhost:3000/c/offeredjob", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/c/offeredjob", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +53,7 @@ function InterviewList() {
 
     try {
       console.log("false");
-      const response = await fetch("http://localhost:3000/c/rejected", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/c/rejected", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

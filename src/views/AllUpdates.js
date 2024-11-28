@@ -11,7 +11,7 @@ export default function AllJobs() {
     // Function to fetch data from the API
     const fetchData = async () => {
         try {
-            const response = await fetch('http://localhost:3000/a/updates', {
+            const response = await fetch('https://dbms-backend-97ab.onrender.com/a/updates', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ export default function AllJobs() {
     // Function to handle removing an entry
     const handleRemove = async (mid) => {
         try {
-            const response = await fetch('http://localhost:3000/a/removeUpdate', {
+            const response = await fetch('https://dbms-backend-97ab.onrender.com/a/removeUpdate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

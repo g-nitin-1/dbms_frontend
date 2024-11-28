@@ -10,7 +10,7 @@ export default function EligibleJobs() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/s/eligibleJobs", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/s/eligibleJobs", {
         method: "GET",
         headers: { 
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ export default function EligibleJobs() {
     event.preventDefault();
     const formData = new FormData(event.target);
     try {
-      const response = await fetch("http://localhost:3000/s/apply", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/s/apply", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

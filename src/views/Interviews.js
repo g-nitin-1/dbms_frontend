@@ -9,7 +9,7 @@ export default function AddNewJob() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/s/interviews", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/s/interviews", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

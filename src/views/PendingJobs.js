@@ -10,7 +10,7 @@ export default function AdminStudents() {
   const fetchData = async () => {
     try {
         console.log("token : ", localStorage.getItem('token'));
-      const response = await fetch("http://localhost:3000/a/pendingjobs", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/a/pendingjobs", {
         method: "GET",
         headers: { 
             "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export default function AdminStudents() {
     const formData = new FormData(event.target);
     try {
       console.log("HI HERE HELLO ");
-      const response = await fetch("http://localhost:3000/a/approve", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/a/approve", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,7 +61,7 @@ export default function AdminStudents() {
   const handleFormSubmit2 = async (event) => {
     const formData = new FormData(event.target);
     try {
-      const response = await fetch("http://localhost:3000/a/reject", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/a/reject", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

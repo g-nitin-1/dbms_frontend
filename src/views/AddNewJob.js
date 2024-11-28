@@ -19,7 +19,7 @@ function JobRegistrationForm() {
   const [loading, setLoading] = useState(false);
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/c/branches", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/c/branches", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +90,7 @@ function JobRegistrationForm() {
   const handleSubmit1 = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/c/addjob", {
+      const response = await fetch("https://dbms-backend-97ab.onrender.com/c/addjob", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

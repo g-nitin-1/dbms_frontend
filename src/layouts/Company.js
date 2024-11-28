@@ -58,7 +58,7 @@ function Company() {
   useEffect(() => {
     const is_valid = async () => {
       try {
-        const response = await fetch("http://localhost:3000/c", {
+        const response = await fetch("https://dbms-backend-97ab.onrender.com/c", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
