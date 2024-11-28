@@ -1,0 +1,161 @@
+/* Login.css */
+
+.login-wrapper {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/img/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.portal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+.login-register-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn.active {
+    background-color: black;
+    color: white;
+}
+
+.toggle-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.role-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.role-icon {
+    cursor: pointer;
+    margin: 10px 25px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.role-icon:hover {
+    transform: scale(1.1);
+}
+
+.role-icon.selected img {
+    border: 2px solid black;
+    border-radius: 25%;
+    padding: 4px;
+}
+
+.role-logo {
+    width: 50px;
+    height: 40px;
+}
+
+.role-text {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Media query for portrait view */
+@media (orientation: portrait) {
+    .login-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portal-title {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .login-container {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 20px 0;
+    }
+}
+
+/* Media query for landscape view */
+@media (orientation: landscape) {
+    .login-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .portal-title {
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+
+    .login-container {
+        flex: 1;
+        width: 60%; /* Adjust width */
+        margin-left: auto; /* Push the container to the right */
+        margin-right: 10%;
+    }
+}
