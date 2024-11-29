@@ -1,4 +1,3 @@
-import Dashboard from "views/Dashboard.js";
 import UserProfile from "views/StudentProfile.js";
 import TableList from "views/TableList.js";
 import Typography from "views/Typography.js";
